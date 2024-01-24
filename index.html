@@ -1,0 +1,1041 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Profile</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        
+            <style>
+        @media only screen and (max-width: 1200px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Sesuaikan lebar kartu dengan layar yang lebih kecil */
+        margin-bottom: 20px;
+    }
+    }
+
+
+
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+    </head>
+    <body class="w3-white">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="saya.jpg" style="width:100%" class="ha">
+    <style>
+    .ha {
+        filter: brightness(50%);
+        transition: filter 0.3s, box-shadow 0.3s;
+    }
+
+    .ha:hover {
+        filter: brightness(100%);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+    </style>
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>MY CARD</p>
+    </a>
+    <a href="#gacha" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-random w3-xxlarge"></i>
+        <p>GACHA CARD</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+    </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Al - Husein</h1>
+        <style>
+        .w3-jumbo {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .w3-jumbo::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #000000; /* Warna garis bawah */
+            transition: width 0.3s ease;
+        }
+    
+        .w3-jumbo:hover::after {
+            width: 100%;
+            left: 0;
+            animation: slideLeft 0.3s ease;
+        }
+    
+        @keyframes slideLeft {
+            from {
+            left: 50%;
+            }
+            to {
+            left: 0;
+            }
+        }
+        </style>
+        <p> Web Developer and Web Designer.</p>
+        <div class="image-container">
+        <img src="saya.jpg" alt="boy" class="w3-image">
+        <div class="overlay"></div>
+        </div>
+        <style>
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            overflow: hidden;
+            display: flex;
+        }
+        
+        .w3-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        
+        .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent 50%, rgb(255, 255, 255) 100%); /* Change this line to set the overlay color to white */
+        mix-blend-mode: multiply;
+    }
+        </style>
+
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+        <h2 class="w3-text-light-black">Maulana Siddiq Al-husein</h2>
+        <hr style="width: 400px; background-color: gray; height: 2px; border: none;">
+        <p>Salam! Saya adalah <u><b>Maulana Siddiq Al-Husein</b></u>, seorang <u>desainer web</u> yang memiliki keterampilan dalam menciptakan halaman <u>web responsif.</u> Meskipun saya tidak selalu mengejar proyek tersebut, saya telah mengembangkan kemampuan khusus dalam <b>mendesain tampilan yang menarik</b> dan berfungsi dengan baik. Dengan pengalaman dalam menciptakan halaman web yang responsif, saya menghadirkan kombinasi keahlian teknis dan kecintaan terhadap desain visual.
+            <br><br>Di luar dunia desain web, saya menemukan kegembiraan dalam seni warna dan visual. Kesenangan saya terletak pada mewarnai dan menggambar kartun, di mana saya dapat menyuarakan imajinasi dan kekreatifan saya. Aktivitas ini bukan hanya bentuk ekspresi seni, tetapi juga menjadi cara bagi saya untuk menciptakan karya-karya yang mencerminkan keceriaan dan keunikan. <b style="color: #ffffff75;">Dengan kombinasi keterampilan teknis dan bakat artistik, saya terus menggabungkan kedua dunia ini, menciptakan desain web yang tidak hanya efektif secara fungsional tetapi juga memikat secara visual.</b>
+        </p>
+        <h3 class="w3-padding-16 w3-text-light-Black">My Skills</h3>
+        <hr style="width: 200px; background-color: gray; height: 2px; border: none;">
+        <p class="w3-wide">Web Design</p>
+        <div class="w3-grey">
+        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+        </div>
+        <p class="w3-wide">Web Developer</p>
+        <div class="w3-grey">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+        </div>
+        <p class="w3-wide">Developer frontend</p>
+        <div class="w3-grey">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+        </div><br>
+        
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">20+</span><br>
+            class
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">10+</span><br>
+            Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">15+</span><br>
+            Sertifikat
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">10+</span><br>
+            Seminar
+        </div>
+        </div>
+        <button class="w3-button w3-light-gray w3-padding-large w3-section">
+            <a href="https://faizzurhan.github.io/cv-faiz/Profile8.pdf" download style="text-decoration:none;color:inherit;">
+            <i class="fa fa-download"></i> Download Resume
+            </a>
+        </button>
+    
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+    
+    <h2 class="w3-text-light-black">My Card</h2>
+    <hr style="width: 200px; background-color: gray; height: 2px; border: none;">
+
+    <div class="cards-container">
+        <div class="card">
+        <img src="left.jpeg" alt="Card Image">
+        </div>
+        <div class="card">
+        <img src="center.jpeg" alt="Card Image">
+        </div>
+        <div class="card">
+        <img src="right.jpeg" alt="Card Image">
+        </div>
+    </div>
+    <style>
+
+        .cards-container {
+        display: flex;
+        gap: 30px; /* Adjust the gap as needed */
+        justify-content: space-between; /* Align cards at the start, end, and between */
+        }
+
+        .card {
+        position: relative;
+        width: 220px; /* Adjust the width as needed */
+        height: 294px; /* Adjust the height as needed */
+        background-color: rgba(216, 208, 208, 0.76);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 12px;
+        gap: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        }
+
+        .card img {
+        width: 100%; /* Make the image fill the container */
+        height: 100%; /* Make the image fill the container */
+        border-radius: 8px; /* Apply border-radius to the image */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+
+        .card::before {
+        
+        content: "";
+        position: absolute;
+        inset: 0;
+        left: -5px;
+        margin: auto;
+        width: 230px; /* Adjust the width as needed */
+        height: 304px; /* Adjust the height as needed */
+        border-radius: 10px;
+        background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+        z-index: -10;
+        pointer-events: none;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+        transform: translate3d(0, 0, 0) scale(0.95);
+        filter: blur(20px);
+        }
+
+        .heading {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 700;
+        }
+
+        .card p:not(.heading) {
+        font-size: 14px;
+        }
+
+        .card p:last-child {
+        color: #e81cff;
+        font-weight: 600;
+        }
+
+        .card:hover::after {
+        filter: blur(30px);
+        }
+
+        .card:hover::before {
+        transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+        }
+    </style>
+
+    <!-- Contact and Skills Section -->
+    <br><br><br>
+    <br><div class="w3-padding-64 w3-content w3-text-black" id="contact">
+    <div class="w3-row-padding">
+        <!-- Contact Section - Left Column -->
+        <div class="w3-col m6">
+        <h2 class="w3-text-light-Black">Contact Me</h2>
+        <hr style="width: 400px; background-color: gray; height: 2px; border: none;">
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-grey w3-xxlarge w3-margin-right"></i> Medan, Indonesia</p>
+            <p><i class="fa fa-phone fa-fw w3-text-grey w3-xxlarge w3-margin-right"></i> Phone: +62 895-4011-74533</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-grey w3-xxlarge w3-margin-right"> </i> Email: theleaderofenemy@mail.com</p>
+        </div>
+        </div>
+
+        <!-- Skills Section - Right Column -->
+        <div class="w3-col m6">
+        <div class="container">
+            <div class="skill-box">
+            <span class="title">Html</span>
+            <div class="skill-bar">
+                <span class="skill-per html">
+                <span class="tooltip">80%</span>
+                </span>
+            </div>
+            </div>
+
+            <div class="skill-box">
+            <span class="title">JavaScript</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+                <span class="tooltip">30%</span>
+                </span>
+            </div>
+            </div>
+
+            <div class="skill-box">
+            <span class="title">Css</span>
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+                <span class="tooltip">40%</span>
+                </span>
+            </div>
+            </div>
+
+            <div class="skill-box">
+            <span class="title">C++</span>
+            <div class="skill-bar">
+                <span class="skill-per nodejs">
+                <span class="tooltip">60%</span>
+                </span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <style>
+    /* Your existing CSS styles remain unchanged */
+
+    /* Additional styles for the two-column layout */
+    .w3-row-padding {
+    margin: 0 -16px;
+    }
+
+    .w3-col {
+    padding: 0 16px;
+    }
+
+    @media (max-width: 600px) {
+    .w3-col {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    }
+    .container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: linear-gradient(-45deg, #fb00ffb2 0%, #00dadea8 100%);
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    user-select: none;
+    }
+
+    .container .skill-box {
+    width: 100%;
+    margin: 25px 0;
+    }
+
+    .skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    }
+
+    .skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgb(255, 255, 255);
+    }
+
+    .skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #131313e3;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    }
+
+    .skill-per.html {
+    /*progreso de las diferentes lenguajes*/
+    width: 80%;
+    animation-delay: 0.1s;
+    }
+
+    .skill-per.css {
+    /*progreso de las diferentes lenguajes*/
+    width: 30%;
+    animation-delay: 0.1s;
+    }
+
+    .skill-per.javascript {
+    /*progreso de las diferentes lenguajes*/
+    width: 40%;
+    animation-delay: 0.2s;
+    }
+
+    .skill-per.nodejs {
+    /*progreso de las diferentes lenguajes*/
+    width: 70%;
+    animation-delay: 0.3s;
+    }
+
+    @keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    }
+
+    .skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #131313e3;
+
+    z-index: 1;
+    }
+
+    .tooltip::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background: #131313e3;
+    transform: translateX(-50%) rotate(45deg);
+    }
+
+    </style>
+
+    </div>
+    <!-- Tombol Kembali ke Atas -->
+    <style>
+    #scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    transition: opacity 0.3s;
+    }
+
+    #scrollBtn.show {
+    opacity: 1;
+    }
+    .custom-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.815);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .custom-svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+    }
+
+    .custom-svgIcon path {
+    fill: rgb(61, 61, 61);
+    }
+
+    .custom-button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color:#f1f1f1;
+    align-items: center;
+    }
+
+    .custom-button:hover .custom-svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+    }
+
+    .custom-button::before {
+    position: absolute;
+    bottom: 50%; /* Ubah nilai bottom sesuai kebutuhan */
+    left: 50%; /* Tambahkan properti left untuk posisi horizontal */
+    content: "Back to Top";
+    color: rgb(61, 61, 61);
+    font-size: 0px;
+    transform: translate(-50%, 50%); /* Tambahkan transform agar teks berada di tengah tombol */
+    opacity: 0; /* Ubah nilai opacity menjadi 0 agar tidak terlihat pada awalnya */
+    transition-duration: 0.3s;
+    }
+
+    .custom-button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transition-duration: 0.3s;
+    }
+
+    </style>
+    <button class="custom-button" onclick="scrollToTop()" id="scrollBtn" style="display:none;">
+    <svg class="custom-svgIcon" viewBox="0 0 384 512">
+        <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+    </svg>
+    </button>
+    <!-- Footer -->
+<br><br>
+<div class="wrapper">
+  <div class="cardaja">
+    <div class="headingaja">Ajarin dong Puhh Sepuhh....<br><span>Aku Masih pemula</span></div>
+    <div class="contentaja">
+      <p>Karena kita sesama <u>PEMULA</u>, Kalau kamu mau Codingan Halaman Website ini Click Aja Tombol dibawah ini 😁</p>
+    </div>
+    <button class="buttonaja" name="buttonaja">Click Me</button>
+
+        <style>
+            .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+            }
+            .cardaja {
+  height: 300px;
+  width: 220px;
+  padding: 15px;
+  position: relative;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.825), rgba(247, 28, 200, 0.13)),
+  radial-gradient(circle at 0%, rgba(172, 56, 187, 0.329), rgba(121, 21, 179, 0.521) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(33, 10, 54, 0.236) 75%),
+  radial-gradient(circle at 100%, rgba(171, 0, 238, 0.329), rgba(13, 115, 231, 0.514) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.315) 75%),
+  radial-gradient(circle at 100% 0%, rgba(5, 5, 5, 0.329), rgb(226, 226, 231) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.161) 75%),
+  radial-gradient(circle at 0% 100%, rgba(45, 10, 173, 0.541), rgba(178, 22, 245, 0.805) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.315) 75%),
+  radial-gradient(closest-side, #3f87a646, #ebf8e13d, #3cd1f654),
+  linear-gradient(315deg, rgba(212, 212, 207, 0.74) 3%, rgb(11, 12, 12) 38%, rgba(16, 24, 23, 0.301) 68%, rgba(166, 168, 173, 0.942) 98%);
+  background-size: 200% 200%;
+  animation: cosmic 10s ease-in-out infinite;
+  box-sizing: border-box;
+  transform: skewY(-5deg);
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+  height: 300px;
+  width: 220px;
+  padding: 15px;
+}
+
+.cardaja::before {
+  content: '';
+  width: 10px;
+  height: 300px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.825), rgba(247, 28, 200, 0.13)),
+  radial-gradient(circle at 0%, rgba(172, 56, 187, 0.329), rgba(121, 21, 179, 0.521) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(33, 10, 54, 0.236) 75%),
+  radial-gradient(circle at 100%, rgba(171, 0, 238, 0.329), rgba(13, 115, 231, 0.514) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.315) 75%),
+  radial-gradient(circle at 100% 0%, rgba(5, 5, 5, 0.329), rgb(226, 226, 231) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.161) 75%),
+  radial-gradient(circle at 0% 100%, rgba(45, 10, 173, 0.541), rgba(178, 22, 245, 0.805) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.315) 75%),
+  radial-gradient(closest-side, #3f87a646, #ebf8e13d, #3cd1f654),
+  linear-gradient(315deg, rgba(212, 212, 207, 0.74) 3%, rgb(11, 12, 12) 38%, rgba(16, 24, 23, 0.301) 68%, rgba(166, 168, 173, 0.942) 98%);
+  background-size: 200% 200%;
+  animation: cosmic 10s ease-in-out infinite;
+  position: absolute;
+  top: 0px;
+  left: -9.5px;
+  transform-origin: right;
+  transform: skewY(45deg);
+  border: none;
+  transition: all 0.5s;
+}
+
+.cardaja::after {
+  content: '';
+  height: 10px;
+  width: 220px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.825), rgba(247, 28, 200, 0.13)),
+  radial-gradient(circle at 0%, rgba(172, 56, 187, 0.329), rgba(121, 21, 179, 0.521) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(33, 10, 54, 0.236) 75%),
+  radial-gradient(circle at 100%, rgba(171, 0, 238, 0.329), rgba(13, 115, 231, 0.514) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.315) 75%),
+  radial-gradient(circle at 100% 0%, rgba(5, 5, 5, 0.329), rgb(226, 226, 231) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.161) 75%),
+  radial-gradient(circle at 0% 100%, rgba(45, 10, 173, 0.541), rgba(178, 22, 245, 0.805) 50%, rgba(37, 26, 26, 0.432) 75%, rgba(51, 51, 51, 0.315) 75%),
+  radial-gradient(closest-side, #3f87a646, #ebf8e13d, #3cd1f654),
+  linear-gradient(315deg, rgba(212, 212, 207, 0.74) 3%, rgb(11, 12, 12) 38%, rgba(16, 24, 23, 0.301) 68%, rgba(166, 168, 173, 0.942) 98%);
+  background-size: 200% 200%;
+  animation: cosmic 10s ease-in-out infinite;
+  position: absolute;
+  top: -9.5px;
+  left: 0px;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: all 0.5s;
+  box-shadow: -310px 315px 6px rgba(36, 4, 41, 0.5);
+}
+
+@keyframes cosmic {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.cardaja:hover {
+  transform: skewY(0deg);
+}
+
+.cardaja:hover::before {
+  width: 0px;
+  height: 300px;
+  left: 0;
+  top: 0.1px;
+}
+
+.cardaja:hover::after {
+  width: 220px;
+  height: 0px;
+  left: 0.1px;
+  top: 0;
+  border: none;
+}
+
+.cardaja > *:not(.headingaja) {
+  opacity: 0;
+}
+
+.cardaja .headingaja {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.7s;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.cardaja .headingaja span {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  animation: flickering 3s linear infinite;
+}
+
+.cardaja .headingaja span::before {
+  position: absolute;
+  top: 40px;
+  left: 40%;
+  transform: rotate(-90deg);
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
+.cardaja:hover .headingaja span::before {
+  transform: rotate(90deg);
+  left: 45%;
+}
+
+@keyframes flickering {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  52% {
+    opacity: 1;
+  }
+
+  54% {
+    opacity: 0;
+  }
+
+  56% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  94% {
+    opacity: 1;
+  }
+
+  96% {
+    opacity: 0;
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.cardaja:hover .headingaja {
+  top: 13%;
+}
+
+.cardaja:hover > *:not(.headingaja) {
+  animation: fadeIn 1s ease 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.cardaja .contentaja {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.cardaja .contentaja .item {
+  border-radius: 0px 5px 0 5px;
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2px 30px;
+  justify-content: start;
+  align-items: center;
+}
+
+.cardaja .contentaja .item:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contentaja .item--create:hover svg {
+  animation: create 4s infinite;
+  stroke: #DB0F5A;
+}
+
+@keyframes create {
+  0% {
+    transform: translateX(1px);
+  }
+
+  10% {
+    transform: translateX(-1px);
+  }
+
+  20% {
+    transform: translateX(1px);
+  }
+
+  30% {
+    transform: translateX(-1px);
+  }
+
+  40% {
+    transform: translateX(1px);
+  }
+
+  50% {
+    transform: translateX(-1px);
+  }
+
+  60% {
+    transform: translateX(1px);
+  }
+
+  70% {
+    transform: translateX(-1px);
+  }
+
+  80% {
+    transform: translateX(1px);
+  }
+
+  90% {
+    transform: translateX(-1px);
+  }
+
+  100% {
+    transform: translateX(1px);
+  }
+}
+
+.contentaja .item--post:hover svg {
+  animation: rocket 1s infinite;
+  stroke: #DB0F5A;
+}
+
+@keyframes rocket {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-2deg);
+  }
+
+  20% {
+    transform: rotate(2deg);
+  }
+
+  30% {
+    transform: rotate(-2deg);
+  }
+
+  40% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  60% {
+    transform: rotate(2deg);
+  }
+
+  70% {
+    transform: rotate(-2deg);
+  }
+
+  80% {
+    transform: rotate(2deg);
+  }
+
+  90% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.contentaja .item--inspire:hover svg {
+  animation: inspire 2s infinite;
+  stroke: #DB0F5A;
+}
+
+@keyframes inspire {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(0.97);
+  }
+
+  20% {
+    transform: scale(1.03);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.97);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(0.97);
+  }
+
+  80% {
+    transform: scale(1.03);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.97);
+  }
+}
+
+.buttonaja {
+  cursor: pointer;
+  border-radius: 0px 5px 0 5px;
+  height: 30px;
+  width: calc(100% + 50px);
+  position: relative;
+  border: none;
+  transition: 0.2s;
+  background-color: #CC014D;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  z-index: 0 !important;
+}
+
+.contentaja::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  border: 15px solid #DB0F5A;
+  right: -30px;
+  border-right-color: transparent;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.contentaja::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  bottom: 5px;
+  right: -10px;
+  border-width: 10px 10px 0 0;
+  border-color: #6B043A transparent transparent transparent;
+}
+
+.buttonaja:hover {
+  letter-spacing: 1px;
+}
+
+.buttonaja:active {
+  transform: translateY(1px);
+}
+</style>
+</div>
+</div>
+        
+
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+    <i class="fa fa-instagram w3-hover-opacity" onclick="window.location.href='https://www.instagram.com/maulana_siddiq_al_husein/#'"> @maulana_siddiq_al_husein</i><br>
+    <i class="fa fa-pinterest-p w3-hover-opacity" onclick="window.location.href='https://www.pinterest.com/your-pinterest-profile'"> theleaderofenemy</i><br>
+    <i class="fa fa-github w3-hover-opacity" onclick="window.location.href='https://github.com/theleaderofenemy'"> theleaderofenemy</i><br>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <!-- End footer -->
+</footer>
+
+    
+
+    <!-- END PAGE CONTENT -->
+    </div>
+    </body>
+    <script>
+    var scrollBtn = document.getElementById("scrollBtn");
+
+    window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = "block";
+        scrollBtn.classList.add("show");
+    } else {
+        scrollBtn.classList.remove("show");
+    }
+    };
+
+    function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
+    </script>
+    </html>
